@@ -29,6 +29,10 @@ app.post('/api/media', (req, res) => {
 // Simple health check
 app.get('/api/health', (req, res) => res.send('OK'));
 
-app.listen(PORT, () => {
-  console.log(`🚀 Backend listening on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Backend listening on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
