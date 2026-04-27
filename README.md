@@ -13,37 +13,26 @@ A premium, high-performance web application designed for athletes, scouts, and f
 - **Asset Management**: View your tracked media in a beautifully organized grid.
 - **Fast & Responsive**: Built with Next.js 14 for lightning-fast performance and full responsiveness.
 
-## 🚀 Getting Started
+## 🚀 Deployment (Vercel Ready)
 
-### Prerequisites
+This project is optimized for **Vercel**. Since the backend logic is now integrated into Next.js API routes, you can deploy the entire app in one click!
 
-- Node.js (v18 or higher)
-- npm or yarn
+### Local Setup
 
-### Installation
-
-1. **Clone the repository:**
+1. **Clone & Install:**
    ```bash
-   git clone https://github.com/srijeetcoder/digital-sports-media-tracker.git
-   cd digital-sports-media-tracker
+   cd frontend
+   npm install
    ```
 
-2. **Setup the Backend:**
+2. **Run:**
    ```bash
-   cd backend
-   npm install
-   node server.js
-   ```
-
-3. **Setup the Frontend:**
-   ```bash
-   cd ../frontend
-   npm install
    npm run dev
    ```
+   Navigate to [http://localhost:3000](http://localhost:3000).
 
-4. **Open the App:**
-   Navigate to [http://localhost:3000](http://localhost:3000) to see the tracker in action.
+---
+**Note:** The separate `backend` folder is now optional and kept for reference. The live app uses `pages/api/media.js`.
 
 ## 🛠️ Technology Stack
 

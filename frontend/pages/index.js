@@ -7,7 +7,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const API_URL = 'http://localhost:5000/api/media';
+  const API_URL = '/api/media';
 
   useEffect(() => {
     fetchMedia();
